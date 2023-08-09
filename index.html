@@ -8,16 +8,64 @@
 <script>
 function setup() {
 	createCanvas(windowWidth, windowHeight);
-	background(0);
+	background(250);
+   
+
+
+   // strokeWeight(1);
 }
 
 function draw() {
-    //noFill   ;
-    fill(255,0,0,127);
+
+ //   background(250);
+ // let radius = width * 1.5;
+
+  //drag to move the world.
+  // orbitControl();
+
+  // normalMaterial();
+  // translate(0, 0, -600);
+  // for (let i = 0; i <= 60; i++) {
+    // for (let j = 0; j <= 60; j++) {
+    //  push();
+ ///     let a = (j / 12) * PI;
+ //     let b = (i / 12) * PI;
+   //   translate(
+ ///       sin(2 * a) * radius * sin(b),
+ //       (cos(b) * radius) / 2,
+ //       cos(2 * a) * radius * sin(b)
+ //     );
+ //     if (j % 2 === 0) {
+ //       cone(30, 30);
+//      } else {
+    //    box(30, 30, 30);
+  //    }
+     // pop();
+   // }
+ // }
+
+    noFill   ;
+    fill(0, 100, 0,127);
     rect(0,50,100,20);
-	stroke(0, 255, 0);
-	circle(mouseX -25, mouseY -25 , 120);
+	stroke(0);
+  circle(mouseX, mouseY, 60);
+
+ //   let x = mouseX;
+  //  let y = mouseY;
+   // let ix = width - mouseX;  // Inverse X
+   // let iy = height - mouseY; // Inverse Y
+  
+    // fill(255, 150);
+    // stroke (0)
+    // ellipse(x, height/2, y, y);
+    // fill(0, 159);
+    // stroke (255)
+    // ellipse(ix, height/2, iy, iy);
+ //background (250) 
+   line(mouseX, mouseY, pmouseX, pmouseY);   
+
 }
+
 </script>
     </body>
 </html>
